@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "BradSiteBlocker",
+  "version": "1.0",
+  "description": "Block distracting sites with AI, but whitelist educational ones.",
+  
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation"
+  ],
+  
+  "host_permissions": [
+    "https://api-inference.huggingface.co/*"
+  ],
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["block.html"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "options_page": "options.html",
+  
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
