@@ -5,8 +5,8 @@
 // =================================================================
 
 // --- Configuration ---
-// **Note:** Replace "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" with your actual Hugging Face API Key.
-const HF_API_KEY = "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"; 
+// **Note:** Remove // and Replace "HF-Key-Here" with your actual Hugging Face API Key.
+const HF_API_KEY = "HF-Key-Here"; 
 const HF_MODEL = "facebook/bart-large-mnli"; // Zero-shot classifier
 
 // Permanent safe sites that should NEVER be blocked (even if the AI misclassifies)
